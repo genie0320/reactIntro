@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="KO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- React and ReactDOM from CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin="crossorigin"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin="crossorigin"></script>
+    <!-- Babel for JSX transformation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <h1>Change the title of page</h1>
+
+    <div id="banner"></div>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+    <!-- Root element for React -->
+    <div id="root"></div>
+
+    <!-- Your React code -->
+    <script type="text/babel">
+        // Your React code here
+            const App = () => {
+                return (<div>
+                    <h1>Hello, React with CDN!</h1>
+                </div>);
+            };
+
+            // Render the React app
+            ReactDOM.render(<App/>, document.getElementById('root'));
+        </script>
+</body>
+
+</html>
